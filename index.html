@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- animaciones para la pagina (css) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+  <script src="script.js" defer></script>
+  <!-- animaciones para la pagina (javascript) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Mis XV Años</title>
+</head>
+<body>
+  <!-- ventana emergente con musica -->
+  <section>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+          <p>¿Quieres activar la música en la página?</p>
+          <div class="buttons">
+              <img src="imagenes/sonido desactivado.png" alt="No activar música" id="noMusic" class="popup-button">
+              <img src="imagenes/sonido activado.png" alt="Activar música" id="playMusic" class="popup-button">
+          </div>
+      </div>
+    </div>
+    <button id="toggleMusicButton" class="fixed-button">
+      <img id="toggleMusicIcon" src="imagenes/sonido activado.png" alt="Toggle Music">
+  </button>
+  <audio id="backgroundMusic" src="musica/The Killers - Human.mp3" loop></audio>
+  </section>
+  <!-- poema  de mis XV años -->
+  <section>
+    <div class="cont_mis_xv">
+      <h1 id="titulo">Mis XV Años</h1>
+    </div>
+    <!-- añadir una cuenta atras -->
+
+
+
+
+    <div class="cont_poema" data-aos="fade-down"> 
+      <p id="poema">
+          Que cada latido sea una melodía de mi alegría,<br>
+          y en mis XV años, el amor sea mi compañía.<br><br>
+          Que el tiempo se detenga en risas y en sueños,<br>
+          y cada momento sea un tesoro que atesoremos.<br>
+        
+      </p>
+    </div>
+  </section>
+  <!-- invitacion cordial hacia los invitados -->
+  <section>
+    <div class="cont_padrinos" data-aos="fade-up">
+      <p>Todos ustedes estan invitados a la celebracion de mi XV años</p>
+      <h3>En compañia de mis papas:</h3>
+      <p>Linda Barbara Jimenez Hernandez</p>
+      <p>Jose Arturo Rodriguez Jimenez</p>
+      <h3>Y mis padrinos:</h3>
+      <p>Dulce Carolina Jimenez Hernandez</p>
+      <p>Javier Tenorio Salinas<Table></Table></p>
+
+    </div>
+  </section>
+  <!-- Lugar de la iglesia -->
+  <section>
+    <div class="cont_iglesia" data-aos="fade-right">
+      <h3>Ceremonia</h3>
+      <h4 id="parrafo_iglesia">Parroquia Villa San Aguntin</h4>
+      <p>La direccion de la iglesia es:</p>
+      <p>Av Baja California, Cerrada Calvario &, Villa San Agustin Atlapulco, 56346, Chimalhuacán, Méx.</p>
+      <img src="imagenes/Parroquia San Agustin Atlapulco.jpg" alt="imagen del salon" id="imagen_iglesia">
+      <button onclick="newTab('https://www.google.com/maps/place/Parroquia+de+San+Agust%C3%ADn+Atlapulco/@19.3895725,-98.9648597,16z/data=!4m6!3m5!1s0x85d1e2516588d433:0xd0c536bb4c25bc31!8m2!3d19.3880703!4d-98.9604024!16s%2Fg%2F11bw472g4p?entry=ttu')">Ubicacion de la iglesia</button>
+    </div>
+  </section>
+  <!-- Lugar del salon  -->
+  <section>
+    <div class="lugar_salon" data-aos="fade-left">
+      <h3>Salón de Evento</h3>
+        <h4>Salon de Eventos los Arcos</h4>
+        <p>El Salon se encuentra en:</p>
+        <p>Calle Insurgentes LT25, Villa San Agustin Atlapulco, 56343 Chimalhuacán, Méx.</p>
+        <img src="imagenes/salon los arcos.png" alt="Salon de eventos los arco" id="foto_salon">
+        <button onclick="newTab('https://www.google.com/maps/place/C.+Insurgentes+LT25,+Villa+San+Agustin+Atlapulco,+56343+Chimalhuac%C3%A1n,+M%C3%A9x./@19.3895991,-98.9656172,19z/data=!3m1!4b1!4m6!3m5!1s0x85d1e2543b181795:0x217f9ebf33daa503!8m2!3d19.3895991!4d-98.9649735!16s%2Fg%2F11c5flft50?entry=ttu')">Ubicacion del Salón</button>
+    </div>
+  </section>
+  <!-- colocar una imagen de alondra -->
+  <section>
+    <div class="cont_alondra" data-aos="flip-left">
+      <p>Estoy muy emocionada de invitarlos a celebrar mis XV años. Será una fiesta increíble y no sería lo mismo sin ustedes.</p>
+      <p>La celebración será el sábado, 21 de Septiembre del 2024, a las 14:30 hrs en el lugar de la ceremonia y a las 16:30 hrs en el salon del evento.</p>
+      <p>Me encantaría contar con su presencia para compartir una noche llena de diversión, música y buenos momentos.</p>
+      <p>¡Espero verlos allí para hacer de este día algo realmente especial!</p>
+      <!-- carrucel de imagenes -->
+      <div class="slider-box">
+        <ul>
+          <li>
+            <img src="imagenes_relleno/Quinceañera1.jpg" alt="quinceañera1">
+          </li>
+          <li>
+            <img src="imagenes_relleno/Quinceañera2.jpg" alt="quinceañera2">
+          </li>
+          <li>
+            <img src="imagenes_relleno/Quinceañera3.jpg" alt="quinceañera3">
+          </li>
+          <li>
+            <img src="imagenes_relleno/Quinceañera4.jpg" alt="quinceañera4">
+          </li>
+        </ul>
+      </div>
+      <!-- termina la parte del carousel -->
+      <p>Con mucho cariño y aprecio:</p>
+      <h1>Mayte Alondra Rodriguez Jimenez</h1>
+      <button onclick="newTab('https://forms.gle/W58tMuqQLgrKDigk8')">Confirmacion de Asistencia</button>
+    </div>
+  </section>
+  <!-- inicializa las animaciones -->
+  <script>
+    AOS.init({duration: 1000});
+  </script>
+</body>
+</html>
