@@ -126,6 +126,78 @@ button {
   margin-bottom: 330px;
 }
 
+/* cuenta regresiva */
+/* .container {
+  margin-bottom: 50px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.countdown div {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+
+span {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#days {
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  height: 100px;
+  width: 100px;
+  border-radius: 20%;
+  background-color: #ECCDB4;
+}
+
+#hours{
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  height: 100px;
+  width: 100px;
+  border-radius: 20%;
+  background-color: #ECCDB4;
+}
+
+#minutes {
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  height: 100px;
+  width: 100px;
+  border-radius: 20%;
+  background-color: #ECCDB4;
+}
+
+#seconds {
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  height: 100px;
+  width: 100px;
+  border-radius: 20%;
+  background-color: #ECCDB4;
+} */
+
 /* poema */
 .cont_poema {
   background-color: #F9FBE7;
@@ -209,7 +281,7 @@ button {
   display: flex;
   padding: 0;
   width: 400%;
-  animation: slide 20s infinite alternate ease-in-out;
+  animation: slide 15s infinite alternate ease-in-out;
 }
 
 .slider-box li{
@@ -246,3 +318,5 @@ button {
     width: 100%;
   }
 }
+
+/* creacion de la cuenta atras */
