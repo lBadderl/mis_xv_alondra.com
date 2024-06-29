@@ -256,12 +256,13 @@ button {
 
 /* estrella para confirmar la asistencia */
 .estrella {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  height: 150px;
 }
 
 #estrella {
   width: 150px;
   height: 150px;
-  display: block;
-  margin: 0 auto;
 }
