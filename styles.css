@@ -1,8 +1,9 @@
 /*Colores para la pagina:
-#F9FBE7
-#F0EDD4
-#ECCDB4
-#FEA1A1
+#FAF2DD 
+#EFD090
+#F1BA85
+#E79476
+#AC6959
 */
 /*Fuente para todo el documento*/
 @font-face {
@@ -18,7 +19,7 @@
 /* Background de la pagina web */
 body{
     background: linear-gradient(rgba(255,255,255,0.8), rgba(255, 255, 255, 0.8)),
-    url(imagenes/Background.jpg);
+    url(imagenes/Flowers_gold.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,10 +29,11 @@ body{
     font-family: font_cursive;
     font-size: 35px;
     box-sizing: border-box;
+    color: #AC6959;
 }
 /* fuente para todos los h3 */
 h3{
-    color: #FEA1A1;
+    color: #D95448;
     font-size: 35px;
 }
 p{
@@ -41,7 +43,7 @@ p{
 }
 
 button {
-    background-color: #ECCDB4;
+    background-color: #fddb8d;
     color: black;
     margin: 20px;
     padding: 20px 20px;
@@ -126,81 +128,9 @@ button {
   margin-bottom: 330px;
 }
 
-/* cuenta regresiva */
-/* .container {
-  margin-bottom: 50px;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: white;
-}
-
-.countdown {
-  display: flex;
-  justify-content: space-evenly;
-  width: 50%;
-  flex-wrap: wrap;
-}
-
-.countdown div {
-  display: grid;
-  place-items: center;
-  padding: 10px;
-}
-
-span {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-weight: 400;
-}
-
-#days {
-  display: grid;
-  place-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  height: 100px;
-  width: 100px;
-  border-radius: 20%;
-  background-color: #ECCDB4;
-}
-
-#hours{
-  display: grid;
-  place-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  height: 100px;
-  width: 100px;
-  border-radius: 20%;
-  background-color: #ECCDB4;
-}
-
-#minutes {
-  display: grid;
-  place-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  height: 100px;
-  width: 100px;
-  border-radius: 20%;
-  background-color: #ECCDB4;
-}
-
-#seconds {
-  display: grid;
-  place-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  height: 100px;
-  width: 100px;
-  border-radius: 20%;
-  background-color: #ECCDB4;
-} */
-
 /* poema */
 .cont_poema {
-  background-color: #F9FBE7;
+  background-color: #FAF2DD ;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -223,13 +153,17 @@ span {
 .cont_iglesia{
   display: flex;
   flex-direction: column;
-  background-color: #F9FBE7;
+  background-color: #FAF2DD;
   padding: 30px 0;
   justify-content: center;
   text-align: center;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   border-radius: 25px;
+}
+
+.hora_recepcion {
+  margin: 0px;
 }
 #imagen_iglesia, #foto_salon{
   border-radius: 50px;
@@ -251,7 +185,7 @@ span {
 
 /* seccion foto alondra (hacer album de fotos deslizantes)*/
 .cont_alondra{
-  background-color: #F9FBE7;
+  background-color: #FAF2DD;
   padding: 25px;
   display: flex;
   flex-direction: column;
