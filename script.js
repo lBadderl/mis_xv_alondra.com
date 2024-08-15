@@ -8,16 +8,37 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleMusicIcon = document.getElementById('toggleMusicIcon');
 
     // Bajar el volumen de la canción
-    backgroundMusic.volume = 0.1; // Valores entre 0.0 (silencio) y 1.0 (volumen máximo)
+    backgroundMusic.volume = 0.5;
+
+    function fadeOutPopup() {
+        popup.classList.add('fadeOut');
+        setTimeout(function() {
+            popup.style.display = 'none';
+        }, 200); // 500ms corresponde al tiempo de transición
+    }
+
+    function fadeInToggleButton() {
+        toggleMusicButton.style.display = 'block';
+        setTimeout(function() {
+            toggleMusicButton.style.opacity = 1;
+        }, 10); // Pequeño retraso para activar la transición de opacidad
+    }
 
     noMusicButton.addEventListener('click', function () {
-        popup.style.display = 'none';
+        fadeOutPopup();
+        setTimeout(function() {
+            toggleMusicIcon.src = 'imagenes/sonido activado.png';
+            fadeInToggleButton();
+        }, 500);
     });
 
     playMusicButton.addEventListener('click', function () {
-        popup.style.display = 'none';
-        backgroundMusic.play();
-        toggleMusicIcon.src = 'imagenes/sonido desactivado.png';
+        fadeOutPopup();
+        setTimeout(function() {
+            backgroundMusic.play();
+            toggleMusicIcon.src = 'imagenes/sonido desactivado.png';
+            fadeInToggleButton();
+        }, 500);
     });
 
     toggleMusicButton.addEventListener('click', function () {
@@ -30,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
 
 //funcion para abrir en una nueva pagina
 function newTab(url) {
