@@ -65,7 +65,8 @@ button {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  transition: opacity 0.5s ease-in-out;
+  animation: fadeIn 1.5s forwards;
   z-index: 1000;/* Asegura que esté sobre todos los elementos de la pagina */
 }
 
@@ -74,6 +75,13 @@ button {
     opacity: 1;
   }
 }
+
+/* Estilo adicional para manejar el desvanecimiento progresivo de la ventana emergente */
+.fadeOut {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
 .popup-content {
   background-color: #fff;
   padding: 20px;
@@ -114,8 +122,10 @@ button {
   width: 50px; /* Ajusta el tamaño de la imagen */
   height: 30px; /* Ajusta el tamaño de la imagen */
 }
-.fixed-button:hover {
-  background-color: #fff;
+
+#toggleMusicButton {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out; /* Animación de aparición/desaparición */
 }
 
 /* Titulo Xv años */
@@ -258,7 +268,7 @@ button {
 .estrella {
   display: flex;
   justify-content: center;
-  text-align:center;
+  text-align: center;
   height: 150px;
 }
 
