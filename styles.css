@@ -7,272 +7,316 @@
 */
 /*Fuente para todo el documento*/
 @font-face {
-    font-family: font_body;
-    src: url(fuentes/RobotoSlab-VariableFont_wght.ttf);
-    /* fuente para los titulos especiales */
-    font-family: font_titles;
-    src: url(fuentes/Pacifico-Regular.ttf);
-    /* fuente cursiva */
-    font-family: font_cursive;
-    src: url(fuentes/great-vibes.regular.ttf)
+  font-family: font_body;
+  src: url(fuentes/RobotoSlab-VariableFont_wght.ttf);
+  /* fuente para los titulos especiales */
+  font-family: font_titles;
+  src: url(fuentes/Pacifico-Regular.ttf);
+  /* fuente cursiva */
+  font-family: font_cursive;
+  src: url(fuentes/great-vibes.regular.ttf)
 }
 /* Background de la pagina web */
 body{
-    background: linear-gradient(rgba(255,255,255,0.8), rgba(255, 255, 255, 0.8)),
-    url(imagenes/Flowers_gold.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255, 255, 255, 0.8)),
+  url(imagenes/Flowers_gold.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 *{
-    font-family: font_cursive;
-    font-size: 35px;
-    box-sizing: border-box;
-    color: #AC6959;
+  font-family: font_cursive;
+  font-size: 35px;
+  box-sizing: border-box;
+  color: #AC6959;
 }
 /* fuente para todos los h3 */
 h3{
-    color: #D95448;
-    font-size: 35px;
+  color: #D95448;
+  font-size: 35px;
 }
 p{
-    font-size: 35px;
-    margin: 30px;
-    text-align: center;
+  font-size: 35px;
+  margin: 30px;
+  text-align: center;
 }
 
 button {
-    background-color: #fddb8d;
-    color: black;
-    margin: 20px;
-    padding: 20px 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
+  background-color: #fddb8d;
+  color: black;
+  margin: 20px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 /* ventana emergente */
 .popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  animation: fadeIn 1.5s forwards;
-  z-index: 1000;/* Asegura que esté sobre todos los elementos de la pagina */
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+animation: fadeIn 1.5s forwards;
+z-index: 1000;/* Asegura que esté sobre todos los elementos de la pagina */
 }
 
 @keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+to {
+  opacity: 1;
+}
 }
 
 /* Estilo adicional para manejar el desvanecimiento progresivo de la ventana emergente */
 .fadeOut {
-  opacity: 0;
-  transition: opacity 0.1s ease-in-out;
+opacity: 0;
+transition: opacity 0.1s ease-in-out;
 }
 
 .popup-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 25px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+background-color: #fff;
+padding: 20px;
+border-radius: 25px;
+text-align: center;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .popup-button {
-  cursor: pointer;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
+cursor: pointer;
+margin: 10px;
+width: 50px;
+height: 50px;
 }
 
 .buttons {
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
+display: flex;
+justify-content: center;
+border-radius: 10px;
 }
 
 .fixed-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 15px; /* Ajusta el tamaño del boton */
-  background-color: #fff;
-  color: #fff;
-  border: none;
-  border-radius: 100%;
-  cursor: pointer;
-  cursor: pointer;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Asegura que esté sobre todos los elemntos de la pagina */
+position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 15px; /* Ajusta el tamaño del boton */
+background-color: #fff;
+color: #fff;
+border: none;
+border-radius: 100%;
+cursor: pointer;
+cursor: pointer;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+z-index: 1000; /* Asegura que esté sobre todos los elemntos de la pagina */
 }
 
 .fixed-button img {
-  width: 50px; /* Ajusta el tamaño de la imagen */
-  height: 30px; /* Ajusta el tamaño de la imagen */
+width: 50px; /* Ajusta el tamaño de la imagen */
+height: 30px; /* Ajusta el tamaño de la imagen */
 }
 
 #toggleMusicButton {
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out; /* Animación de aparición/desaparición */
+opacity: 0;
+transition: opacity 0.8s ease-in-out; /* Animación de aparición/desaparición */
 }
 
 /* Titulo Xv años */
 .cont_mis_xv {
-  text-align: center;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 330px;
+margin-bottom: 330px;
+}
+
+/* cuenta regresiva */
+.container {
+  width: 100%;
+  min-height: 50vh;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  margin-top: 330px;
-  margin-bottom: 330px;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.countdown .div {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+
+/* mensaje final */
+.final-sms {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  transform: translateY(-100%);
+  transition: ease-in-out 0.5s;
+  background-color: #FAF2DD;
+}
+
+.final-sms .h2 {
+  text-align: center;
+  font-size: 100px;
 }
 
 /* poema */
 .cont_poema {
-  background-color: #FAF2DD ;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  padding: 30px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  border-radius: 25px;
+background-color: #FAF2DD ;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+text-align: center;
+padding: 30px 0;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+border-radius: 25px;
 }
 /* padrinos */
 .cont_padrinos{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-top: 330px;
-  margin-bottom: 330px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+margin-top: 330px;
+margin-bottom: 330px;
 }
 
 /* estilos para el contenedor de la iglesia */
 .cont_iglesia{
-  display: flex;
-  flex-direction: column;
-  background-color: #FAF2DD;
-  padding: 30px 0;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  border-radius: 25px;
+display: flex;
+flex-direction: column;
+background-color: #FAF2DD;
+padding: 30px 0;
+justify-content: center;
+text-align: center;
+align-items: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+border-radius: 25px;
 }
 
 .hora_recepcion {
-  margin: 0px;
+margin: 0px;
 }
 
 #imagen_iglesia, #foto_salon{
-  border-radius: 50px;
-  margin: 30px;
-  padding: 20px;
-  height: auto;
-  max-width: 100%;
-  width: 600px;
+border-radius: 50px;
+margin: 30px;
+padding: 20px;
+height: auto;
+max-width: 100%;
+width: 600px;
 }
 
 .lugar_salon{
-  display: flex;
-  flex-direction: column;
-  padding: 330px 0;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+display: flex;
+flex-direction: column;
+padding: 330px 0;
+justify-content: center;
+text-align: center;
+align-items: center;
 }
 
 /* seccion foto alondra (hacer album de fotos deslizantes)*/
 .cont_alondra{
-  background-color: #FAF2DD;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  border-radius: 25px;
+background-color: #FAF2DD;
+padding: 25px;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+border-radius: 25px;
 }
 
 #fotos_alondra{
-  height: auto;
-  max-width: 100%;
-  width: 350px;
-  margin: 30px 0;
+height: auto;
+max-width: 100%;
+width: 350px;
+margin: 30px 0;
 }
 
 /*carrucel de imagenes automatico*/
 .slider-box{
-  width: 600px;
-  height: auto;
-  border-radius: 20px;
-  margin: 50px auto 0;
-  overflow: hidden;
+width: 600px;
+height: auto;
+border-radius: 20px;
+margin: 50px auto 0;
+overflow: hidden;
 }
 
 .slider-box ul{
-  display: flex;
-  padding: 0;
-  width: 400%;
-  animation: slide 15s infinite alternate ease-in-out;
+display: flex;
+padding: 0;
+width: 400%;
+animation: slide 15s infinite alternate ease-in-out;
 }
 
 .slider-box li{
-  width: 100%;
-  list-style: none;
-  position: relative;
+width: 100%;
+list-style: none;
+position: relative;
 }
 
 .slider-box img{
-  width: 100%;
-  border-radius: 20px
+width: 100%;
+border-radius: 20px
 }
 
 @keyframes slide {
-  0% { margin-left: 0;}
-  20% { margin-left: 0;}
+0% { margin-left: 0;}
+20% { margin-left: 0;}
 
-  25% { margin-left: -100%;}
-  45% { margin-left: -100%;}
+25% { margin-left: -100%;}
+45% { margin-left: -100%;}
 
-  50% { margin-left: -200%;}
-  70% { margin-left: -200%;}
+50% { margin-left: -200%;}
+70% { margin-left: -200%;}
 
-  75% { margin-left: -300%;}
-  100% { margin-left: -300%;}
+75% { margin-left: -300%;}
+100% { margin-left: -300%;}
 }
 
 @media (max-width: 991px) {
-  body{
-    padding: 30px;
-  }
+body{
+  padding: 30px;
+}
 
-  .slider-box{
-    width: 100%;
-  }
+.slider-box{
+  width: 100%;
+}
 }
 
 /* estrella para confirmar la asistencia */
 .estrella {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 150px;
+display: flex;
+justify-content: center;
+text-align: center;
+height: 150px;
 }
 
 #estrella {
-  width: 150px;
-  height: 150px;
+width: 150px;
+height: 150px;
 }
